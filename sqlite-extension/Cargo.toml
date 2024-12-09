@@ -1,0 +1,10 @@
+[package]
+edition = "2021"
+name = "sqlite-extension"
+version = "0.1.0"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rusqlite = { workspace = true, features = ["vtab"] }
